@@ -1,4 +1,4 @@
-// Generated from Test.g4 by ANTLR 4.7
+// Generated from Test.g4 by ANTLR 4.4
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -10,62 +10,29 @@ import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class TestParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.7", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.4", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, T__1=2, T__2=3, T__3=4, ID=5, CONSTANT=6, VARIABLE=7, NEWLINE=8, 
+		T__3=1, T__2=2, T__1=3, T__0=4, ID=5, CONSTANT=6, VARIABLE=7, NEWLINE=8, 
 		WS=9;
+	public static final String[] tokenNames = {
+		"<INVALID>", "'+'", "'-'", "'='", "'^'", "ID", "CONSTANT", "VARIABLE", 
+		"NEWLINE", "WS"
+	};
 	public static final int
 		RULE_prog = 0, RULE_lines = 1, RULE_expression = 2, RULE_term = 3;
 	public static final String[] ruleNames = {
 		"prog", "lines", "expression", "term"
 	};
 
-	private static final String[] _LITERAL_NAMES = {
-		null, "'='", "'+'", "'-'", "'^'"
-	};
-	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, null, null, null, "ID", "CONSTANT", "VARIABLE", "NEWLINE", 
-		"WS"
-	};
-	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
-
-	/**
-	 * @deprecated Use {@link #VOCABULARY} instead.
-	 */
-	@Deprecated
-	public static final String[] tokenNames;
-	static {
-		tokenNames = new String[_SYMBOLIC_NAMES.length];
-		for (int i = 0; i < tokenNames.length; i++) {
-			tokenNames[i] = VOCABULARY.getLiteralName(i);
-			if (tokenNames[i] == null) {
-				tokenNames[i] = VOCABULARY.getSymbolicName(i);
-			}
-
-			if (tokenNames[i] == null) {
-				tokenNames[i] = "<INVALID>";
-			}
-		}
-	}
-
-	@Override
-	@Deprecated
-	public String[] getTokenNames() {
-		return tokenNames;
-	}
-
-	@Override
-
-	public Vocabulary getVocabulary() {
-		return VOCABULARY;
-	}
-
 	@Override
 	public String getGrammarFileName() { return "Test.g4"; }
+
+	@Override
+	public String[] getTokenNames() { return tokenNames; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -114,8 +81,7 @@ public class TestParser extends Parser {
 			do {
 				{
 				{
-				setState(8);
-				lines();
+				setState(8); lines();
 				}
 				}
 				setState(11); 
@@ -136,11 +102,11 @@ public class TestParser extends Parser {
 	}
 
 	public static class LinesContext extends ParserRuleContext {
+		public TerminalNode ID() { return getToken(TestParser.ID, 0); }
+		public TerminalNode NEWLINE() { return getToken(TestParser.NEWLINE, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode NEWLINE() { return getToken(TestParser.NEWLINE, 0); }
-		public TerminalNode ID() { return getToken(TestParser.ID, 0); }
 		public LinesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -160,34 +126,27 @@ public class TestParser extends Parser {
 		enterRule(_localctx, 2, RULE_lines);
 		try {
 			setState(20);
-			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case CONSTANT:
 			case VARIABLE:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(13);
-				expression();
-				setState(14);
-				match(NEWLINE);
+				setState(13); expression();
+				setState(14); match(NEWLINE);
 				}
 				break;
 			case ID:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(16);
-				match(ID);
-				setState(17);
-				match(T__0);
-				setState(18);
-				expression();
+				setState(16); match(ID);
+				setState(17); match(T__1);
+				setState(18); expression();
 				}
 				break;
 			case NEWLINE:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(19);
-				match(NEWLINE);
+				setState(19); match(NEWLINE);
 				}
 				break;
 			default:
@@ -232,32 +191,24 @@ public class TestParser extends Parser {
 		int _la;
 		try {
 			setState(27);
-			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,2,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(22);
-				term();
+				setState(22); term();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(23);
-				term();
+				setState(23); term();
 				setState(24);
 				_la = _input.LA(1);
-				if ( !(_la==T__1 || _la==T__2) ) {
+				if ( !(_la==T__3 || _la==T__2) ) {
 				_errHandler.recoverInline(this);
 				}
-				else {
-					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
-					_errHandler.reportMatch(this);
-					consume();
-				}
-				setState(25);
-				term();
+				consume();
+				setState(25); term();
 				}
 				break;
 			}
@@ -274,10 +225,10 @@ public class TestParser extends Parser {
 	}
 
 	public static class TermContext extends ParserRuleContext {
-		public List<TerminalNode> CONSTANT() { return getTokens(TestParser.CONSTANT); }
 		public TerminalNode CONSTANT(int i) {
 			return getToken(TestParser.CONSTANT, i);
 		}
+		public List<TerminalNode> CONSTANT() { return getTokens(TestParser.CONSTANT); }
 		public TerminalNode VARIABLE() { return getToken(TestParser.VARIABLE, 0); }
 		public TermContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -298,57 +249,45 @@ public class TestParser extends Parser {
 		enterRule(_localctx, 6, RULE_term);
 		try {
 			setState(40);
-			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,3,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(29);
-				match(CONSTANT);
+				setState(29); match(CONSTANT);
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(30);
-				match(CONSTANT);
-				setState(31);
-				match(VARIABLE);
+				setState(30); match(CONSTANT);
+				setState(31); match(VARIABLE);
 				}
 				break;
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(32);
-				match(CONSTANT);
-				setState(33);
-				match(VARIABLE);
+				setState(32); match(CONSTANT);
+				setState(33); match(VARIABLE);
 				{
-				setState(34);
-				match(T__3);
+				setState(34); match(T__0);
 				}
-				setState(35);
-				match(CONSTANT);
+				setState(35); match(CONSTANT);
 				}
 				break;
 			case 4:
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(36);
-				match(VARIABLE);
+				setState(36); match(VARIABLE);
 				}
 				break;
 			case 5:
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(37);
-				match(VARIABLE);
+				setState(37); match(VARIABLE);
 				{
-				setState(38);
-				match(T__3);
+				setState(38); match(T__0);
 				}
-				setState(39);
-				match(CONSTANT);
+				setState(39); match(CONSTANT);
 				}
 				break;
 			}
@@ -365,19 +304,19 @@ public class TestParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\13-\4\2\t\2\4\3\t"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\13-\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\3\2\6\2\f\n\2\r\2\16\2\r\3\3\3\3\3\3\3\3\3\3\3\3\3"+
 		"\3\5\3\27\n\3\3\4\3\4\3\4\3\4\3\4\5\4\36\n\4\3\5\3\5\3\5\3\5\3\5\3\5\3"+
-		"\5\3\5\3\5\3\5\3\5\5\5+\n\5\3\5\2\2\6\2\4\6\b\2\3\3\2\4\5\2\60\2\13\3"+
-		"\2\2\2\4\26\3\2\2\2\6\35\3\2\2\2\b*\3\2\2\2\n\f\5\4\3\2\13\n\3\2\2\2\f"+
-		"\r\3\2\2\2\r\13\3\2\2\2\r\16\3\2\2\2\16\3\3\2\2\2\17\20\5\6\4\2\20\21"+
-		"\7\n\2\2\21\27\3\2\2\2\22\23\7\7\2\2\23\24\7\3\2\2\24\27\5\6\4\2\25\27"+
-		"\7\n\2\2\26\17\3\2\2\2\26\22\3\2\2\2\26\25\3\2\2\2\27\5\3\2\2\2\30\36"+
-		"\5\b\5\2\31\32\5\b\5\2\32\33\t\2\2\2\33\34\5\b\5\2\34\36\3\2\2\2\35\30"+
-		"\3\2\2\2\35\31\3\2\2\2\36\7\3\2\2\2\37+\7\b\2\2 !\7\b\2\2!+\7\t\2\2\""+
-		"#\7\b\2\2#$\7\t\2\2$%\7\6\2\2%+\7\b\2\2&+\7\t\2\2\'(\7\t\2\2()\7\6\2\2"+
-		")+\7\b\2\2*\37\3\2\2\2* \3\2\2\2*\"\3\2\2\2*&\3\2\2\2*\'\3\2\2\2+\t\3"+
-		"\2\2\2\6\r\26\35*";
+		"\5\3\5\3\5\3\5\3\5\5\5+\n\5\3\5\2\2\6\2\4\6\b\2\3\3\2\3\4\60\2\13\3\2"+
+		"\2\2\4\26\3\2\2\2\6\35\3\2\2\2\b*\3\2\2\2\n\f\5\4\3\2\13\n\3\2\2\2\f\r"+
+		"\3\2\2\2\r\13\3\2\2\2\r\16\3\2\2\2\16\3\3\2\2\2\17\20\5\6\4\2\20\21\7"+
+		"\n\2\2\21\27\3\2\2\2\22\23\7\7\2\2\23\24\7\5\2\2\24\27\5\6\4\2\25\27\7"+
+		"\n\2\2\26\17\3\2\2\2\26\22\3\2\2\2\26\25\3\2\2\2\27\5\3\2\2\2\30\36\5"+
+		"\b\5\2\31\32\5\b\5\2\32\33\t\2\2\2\33\34\5\b\5\2\34\36\3\2\2\2\35\30\3"+
+		"\2\2\2\35\31\3\2\2\2\36\7\3\2\2\2\37+\7\b\2\2 !\7\b\2\2!+\7\t\2\2\"#\7"+
+		"\b\2\2#$\7\t\2\2$%\7\6\2\2%+\7\b\2\2&+\7\t\2\2\'(\7\t\2\2()\7\6\2\2)+"+
+		"\7\b\2\2*\37\3\2\2\2* \3\2\2\2*\"\3\2\2\2*&\3\2\2\2*\'\3\2\2\2+\t\3\2"+
+		"\2\2\6\r\26\35*";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

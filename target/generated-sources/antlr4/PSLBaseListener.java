@@ -1,6 +1,7 @@
-// Generated from PSL.g4 by ANTLR 4.7
+// Generated from PSL.g4 by ANTLR 4.4
 
 import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
@@ -15,228 +16,228 @@ public class PSLBaseListener implements PSLListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProgram(PSLParser.ProgramContext ctx) { }
+	@Override public void enterDecl_list(@NotNull PSLParser.Decl_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProgram(PSLParser.ProgramContext ctx) { }
+	@Override public void exitDecl_list(@NotNull PSLParser.Decl_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlock(PSLParser.BlockContext ctx) { }
+	@Override public void enterAssignment_stmt(@NotNull PSLParser.Assignment_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlock(PSLParser.BlockContext ctx) { }
+	@Override public void exitAssignment_stmt(@NotNull PSLParser.Assignment_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDecl_list(PSLParser.Decl_listContext ctx) { }
+	@Override public void enterConstant(@NotNull PSLParser.ConstantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDecl_list(PSLParser.Decl_listContext ctx) { }
+	@Override public void exitConstant(@NotNull PSLParser.ConstantContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDecl(PSLParser.DeclContext ctx) { }
+	@Override public void enterDecl(@NotNull PSLParser.DeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDecl(PSLParser.DeclContext ctx) { }
+	@Override public void exitDecl(@NotNull PSLParser.DeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVar_id(PSLParser.Var_idContext ctx) { }
+	@Override public void enterType_id(@NotNull PSLParser.Type_idContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVar_id(PSLParser.Var_idContext ctx) { }
+	@Override public void exitType_id(@NotNull PSLParser.Type_idContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterType_id(PSLParser.Type_idContext ctx) { }
+	@Override public void enterSign(@NotNull PSLParser.SignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitType_id(PSLParser.Type_idContext ctx) { }
+	@Override public void exitSign(@NotNull PSLParser.SignContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStmt(PSLParser.StmtContext ctx) { }
+	@Override public void enterProgram(@NotNull PSLParser.ProgramContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStmt(PSLParser.StmtContext ctx) { }
+	@Override public void exitProgram(@NotNull PSLParser.ProgramContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCompound_stmt(PSLParser.Compound_stmtContext ctx) { }
+	@Override public void enterOrder_stmt(@NotNull PSLParser.Order_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCompound_stmt(PSLParser.Compound_stmtContext ctx) { }
+	@Override public void exitOrder_stmt(@NotNull PSLParser.Order_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStmt_list(PSLParser.Stmt_listContext ctx) { }
+	@Override public void enterCompound_stmt(@NotNull PSLParser.Compound_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStmt_list(PSLParser.Stmt_listContext ctx) { }
+	@Override public void exitCompound_stmt(@NotNull PSLParser.Compound_stmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAssignment_stmt(PSLParser.Assignment_stmtContext ctx) { }
+	@Override public void enterMonomial(@NotNull PSLParser.MonomialContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAssignment_stmt(PSLParser.Assignment_stmtContext ctx) { }
+	@Override public void exitMonomial(@NotNull PSLParser.MonomialContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterOrder_stmt(PSLParser.Order_stmtContext ctx) { }
+	@Override public void enterPolynomial(@NotNull PSLParser.PolynomialContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitOrder_stmt(PSLParser.Order_stmtContext ctx) { }
+	@Override public void exitPolynomial(@NotNull PSLParser.PolynomialContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVariable(PSLParser.VariableContext ctx) { }
+	@Override public void enterVariable(@NotNull PSLParser.VariableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVariable(PSLParser.VariableContext ctx) { }
+	@Override public void exitVariable(@NotNull PSLParser.VariableContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExpr(PSLParser.ExprContext ctx) { }
+	@Override public void enterStmt_list(@NotNull PSLParser.Stmt_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExpr(PSLParser.ExprContext ctx) { }
+	@Override public void exitStmt_list(@NotNull PSLParser.Stmt_listContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPolynomial(PSLParser.PolynomialContext ctx) { }
+	@Override public void enterBlock(@NotNull PSLParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPolynomial(PSLParser.PolynomialContext ctx) { }
+	@Override public void exitBlock(@NotNull PSLParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMonomial(PSLParser.MonomialContext ctx) { }
+	@Override public void enterExpr(@NotNull PSLParser.ExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMonomial(PSLParser.MonomialContext ctx) { }
+	@Override public void exitExpr(@NotNull PSLParser.ExprContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstant(PSLParser.ConstantContext ctx) { }
+	@Override public void enterVar_id(@NotNull PSLParser.Var_idContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConstant(PSLParser.ConstantContext ctx) { }
+	@Override public void exitVar_id(@NotNull PSLParser.Var_idContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterSign(PSLParser.SignContext ctx) { }
+	@Override public void enterStmt(@NotNull PSLParser.StmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitSign(PSLParser.SignContext ctx) { }
+	@Override public void exitStmt(@NotNull PSLParser.StmtContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEveryRule(ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(@NotNull ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEveryRule(ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(@NotNull ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitTerminal(TerminalNode node) { }
+	@Override public void visitTerminal(@NotNull TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitErrorNode(ErrorNode node) { }
+	@Override public void visitErrorNode(@NotNull ErrorNode node) { }
 }
